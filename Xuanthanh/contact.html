@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #B17F59;
+            margin-right: 50px;
+        }
+        nav {
+            flex-grow: 1;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #B17F59;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #8C5F3E;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 50px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 32px;
+            color: #B17F59;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #B17F59;
+            font-weight: 500;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .contact-form button {
+            background-color: #B17F59;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #8C5F3E;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            color: #B17F59;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">đây là trang web liên hệ</div>
+        <nav>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giới Thiệu</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Đăng Nhập/Đăng Xuất</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Liên Hệ Với Chúng Tôi</h1>
+        <form class="contact-form" action="#" method="POST">
+            <label for="name">Họ tên</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Chủ đề</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Nội dung</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Gửi Thông Tin</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Bản quyền thuộc về Trang Web. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>

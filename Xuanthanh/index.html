@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #B17F59;
+            margin-right: 50px;
+        }
+        nav {
+            flex-grow: 1;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #B17F59;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #8C5F3E; /* Tông đậm hơn của #B17F59 khi hover */
+        }
+        .content {
+            flex-grow: 1;
+            text-align: center;
+            padding: 50px;
+        }
+        .content h1 {
+            font-size: 32px;
+            color: #B17F59;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn-signup {
+            background-color: #B17F59;
+            color: white;
+        }
+        .btn-signup:hover {
+            background-color: #8C5F3E; /* Tông đậm hơn khi hover */
+        }
+        .btn-login {
+            background-color: #B17F59;
+            color: white;
+        }
+        .btn-login:hover {
+            background-color: #8C5F3E; /* Tông đậm hơn khi hover */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ddd;
+            color: #B17F59;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">chào mừng bạn đến với trang web xuân thành</div>
+        <nav>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giới Thiệu</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Đăng Nhập/Đăng Xuất</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Chào mừng đến với Trang Chủ</h1>
+        <p>Giới thiệu ngắn gọn: Đây là nơi bạn có thể khám phá và trải nghiệm những điều tuyệt vời nhất!</p>
+        <a href="#" class="btn btn-signup">Đăng Ký</a>
+        <a href="#" class="btn btn-login">Đăng Nhập</a>
+    </div>
+
+    <footer>
+        <p>© 2025 Bản quyền thuộc về Trang Web. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>

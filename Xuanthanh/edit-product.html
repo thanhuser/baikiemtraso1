@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập nhật Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="edit-product-container">
+        <h1>Cập nhật Sản Phẩm</h1>
+        <form action="#" method="POST">
+            <div class="form-field">
+                <label for="name">Tên</label>
+                <input type="text" id="name" name="name" value="Áo thun" required>
+            </div>
+            <div class="form-field">
+                <label for="price">Giá</label>
+                <input type="number" id="price" name="price" value="150000" step="1000" required>
+            </div>
+            <div class="form-field">
+                <label for="description">Mô tả</label>
+                <textarea id="description" name="description" rows="5" required>Áo thun cotton mềm mại, thoáng mát.</textarea>
+            </div>
+            <button type="submit">Cập nhật Sản Phẩm</button>
+        </form>
+        <div class="links">
+            <p>Quay lại <a href="products.html">Danh Sách Sản Phẩm</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Giả lập lấy dữ liệu sản phẩm từ URL hoặc backend
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+        if (productId) {
+            // Ví dụ: Lấy dữ liệu sản phẩm từ backend dựa trên ID
+            console.log(`Cập nhật sản phẩm với ID: ${productId}`);
+        }
+    </script>
+</body>
+</html>

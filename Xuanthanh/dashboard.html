@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Bảng Điều Khiển</h1>
+        <div class="overview">
+            <div class="card">
+                <h3>Sản phẩm</h3>
+                <p class="number" id="products">150</p>
+            </div>
+            <div class="card">
+                <h3>Người dùng</h3>
+                <p class="number" id="users">75</p>
+            </div>
+            <div class="card">
+                <h3>Đơn hàng</h3>
+                <p class="number" id="orders">220</p>
+            </div>
+        </div>
+        <div class="actions">
+            <a href="products.html" class="btn">Danh Sách Sản Phẩm</a>
+        </div>
+    </div>
+
+    <script>
+        // Giả lập kiểm tra đăng nhập và chuyển hướng
+        const isLoggedIn = localStorage.getItem('isLoggedIn'); // Giả định trạng thái đăng nhập
+        if (!isLoggedIn) {
+            window.location.href = 'login.html'; // Chuyển về trang đăng nhập nếu chưa đăng nhập
+        }
+    </script>
+</body>
+</html>
